@@ -21,18 +21,24 @@
     animation-iteration-count: infinite;
     animation-direction: normal; */
 
-    animation: widthAnimate 3s ease-in 0s infinite  normal;
+    animation: colhAnimate 4s ease-in 0s 2 normal;
 }
 
-@keyframes widthAnimate {
-    from {
+@keyframes colhAnimate {
+    0% {
         width: 10px;
         background-color: green;
     }
-    to {
+    50% {
         width: 400px;
         background-color: blue;
         border-radius: 15px;
+    }
+    80% {
+        background-color: red;
+    }
+    100% {
+        background-color: chocolate;
     }
 }
 
