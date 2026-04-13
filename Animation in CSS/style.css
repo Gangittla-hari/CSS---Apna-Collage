@@ -15,19 +15,24 @@
     animation-iteration-count: infinite;
     animation-direction: normal; */
 
-    animation-name: widthAnimate;
+    /* animation-name: widthAnimate;
     animation-duration: 3s;
     animation-delay: 0;
     animation-iteration-count: infinite;
-    animation-direction: normal;
+    animation-direction: normal; */
+
+    animation: widthAnimate 3s ease-in 0s infinite  normal;
 }
 
 @keyframes widthAnimate {
     from {
         width: 10px;
+        background-color: green;
     }
     to {
         width: 400px;
+        background-color: blue;
+        border-radius: 15px;
     }
 }
 
